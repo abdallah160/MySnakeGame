@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <button id="restartButton" style="display:none;" onclick="restartGame()">Restart Game</button>
+
+    <!-- إضافة الموسيقى الخلفية -->
+    <audio id="backgroundMusic" loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- إضافة صوت الأكل والاصطدام -->
+    <audio id="eatSound">
+        <source src="eat_sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="collisionSound">
+        <source src="collision_sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
